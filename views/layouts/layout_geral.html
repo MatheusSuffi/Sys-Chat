@@ -1,0 +1,67 @@
+<!-- layout para as telas gerais -->
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Matheus Suffi">
+
+    <title>Sys Chat</title>
+
+    <!-- Carregamento de Js -->
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='bower_components')}}/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='bower_components')}}/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='bower_components')}}/metisMenu/dist/metisMenu.min.js"></script>
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='dist')}}/js/sb-admin-2.js"></script>
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='js')}}/iddletimer.js"></script>
+    <script type="text/javascript" src="{{=URL(a='teste_chat', c='static', f='js')}}/chatbox-jquery.js"></script>
+    <!-- Carregamento de CSS -->
+    <link type="text/css" href="{{=URL(a='teste_chat', c='static', f='bower_components')}}/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="{{=URL(a='teste_chat', c='static', f='bower_components')}}/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link type="text/css" href="{{=URL(a='teste_chat', c='static', f='dist')}}/css/sb-admin-2.css" rel="stylesheet">
+    <link type="text/css" href="{{=URL(a='teste_chat', c='static', f='css')}}/chatbox-jquery.css" rel="stylesheet">
+    <link type="text/css" href="{{=URL(a='teste_chat', c='static', f='bower_components')}}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">teste socket</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">A Rede Social</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down">
+                        {{=auth.user.first_name}}
+                        </i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user"> 
+                        <li><a href="{{=URL('logout')}}"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        <div class="container">
+            <div id="modal"></div> <div id='get_chat'></div> 
+
+            {{include}}     
+        </div>
+                       
+</body></html>
+<script>
+    function profile(){
+        $.get("{{=URL('profile')}}" , function(data){
+            $('#modal').html(data)
+        });
+    }
+</script>

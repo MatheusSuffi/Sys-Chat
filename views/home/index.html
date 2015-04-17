@@ -1,0 +1,88 @@
+
+{{extend 'layouts/layout_geral.html'}}
+<frame id="frameMae">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+    <div class="col-lg-8"><div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-clock-o fa-fw"></i> Linha do Tempo
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+                <label>No que você está pensando?</label>
+                <textarea class="form-control" id="texto_mensagem" name="mensagem" rows="3"></textarea>
+            </div>
+            <div style="float:right !important;">
+                <button type="button" id="novaPublicacao" class="btn btn-outline btn-primary btn-sm">Publicar</button>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            </div>
+
+            <div id="linha_tempo">                                
+        </div>
+    </div></div>
+    <div class="col-lg-4">
+    <div class="panel panel-default">
+    <div id='usuario_online'></div>          
+
+</frame>
+
+<script>
+$(document).ready(function(){
+//Inicio de Todas as Funções que Envolvem WebSocket
+    var ws = new WebSocket('ws://localhost:8888/realtime/conversa');
+        //Função que Le todas as Mensagens do MessageQueue ao Abrir a pagina
+        ws.onopen = function(){
+            $.get("{{=URL(a='teste_chat', c='home', f='usuarios_online')}}",function(data){
+                $('#usuario_online').html(data);
+            });
+            $.get("{{=URL(a='teste_chat', c='home', f='recebe_mensagem')}}",function(data){
+                $('#linha_tempo').html(data);
+            });
+        }
+        //Funçao que Le todas as mensagens que chegam através do MessageQueue
+        ws.onmessage = function(data){
+            if(data.data == 'atualizaUsuario'){
+                $.get("{{=URL(a='teste_chat', c='home', f='usuarios_online')}}",function(data){
+                    $('#usuario_online').html(data);
+                });
+            }else if(data.data == 'atualizaChat'){
+                $.get("{{=URL(a='teste_chat', c='home', f='abrir_conversa')}}",function(data){
+                    $('#divConversa').html(data);
+                });
+            }else if(data.data == 'atualizaLinhadoTempo'){
+                $.get("{{=URL(a='teste_chat', c='home', f='recebe_mensagem')}}",function(data){
+                    $('#linha_tempo').html(data);
+                });
+            }
+
+        }
+//Fim de todas as Funções que Envolvem WebSocket
+    //Função para uma Nova Publicação na Linha do Tempo    
+    $('#novaPublicacao').click(function(){
+        if($('#texto_mensagem').val() != ''){
+            $.get("{{=URL(a='teste_chat', c='home', f='nova_publicacao')}}?mensagem="+$('#texto_mensagem').val(),function(data){$('#linha_tempo').html(data);
+            });
+        };
+    });
+});
+
+//Função que Detecta o Close da pagina
+var hook = true;
+      window.onbeforeunload = function() {
+        if (hook) {
+            $.get("{{=URL(a='teste_chat', c='home', f='retira_usuario')}}",function(data){
+                $('#usuario_online').html(data);
+            });
+            }
+        }
+      function unhook() {
+        hook=false;
+      }
+</script>

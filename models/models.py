@@ -1,0 +1,32 @@
+chat = db.define_table("chat",
+                               Field('id','integer'),
+                               Field('nome','string'),
+                               Field('mensagem','string'),
+                               Field('id_user','integer'),
+                               Field('id_recebido','integer'),
+                               Field('data_envio','datetime'),
+                               format="%(chat)s",
+                               migrate=False
+                               ),
+amigos = db.define_table("amigos",
+                               Field('id','integer'),
+                               Field('nome','string'),
+                               Field('status','string'),
+                               Field('id_user','integer'),
+                               Field('id_amigo','integer'),
+                               format="%(ativo)s",
+                               migrate=False
+                               ),
+mensagem = db.define_table("mensagem",
+                               Field('id','integer'),
+                               Field('nome','string'),
+                               Field('mensagem','string'),
+                               Field('descricao','string'),
+                               Field('id_user','integer'),
+                               Field('tipo_mensagem','integer'),
+                               Field('data_envio','datetime'),
+                               format="%(mensagem)s",
+                               migrate=False
+                               ),
+
+auth.define_tables(username=False,signature=True,migrate=False)

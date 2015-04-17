@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> global name 'status' is not defined"
+p3
+sS'layer'
+p4
+S'/var/www/web2py/applications/teste_chat/controllers/home.py'
+p5
+sS'code'
+p6
+S'# -*- coding: utf-8 -*-\nfrom gluon.contrib.websocket_messaging import websocket_send\n\n@auth.requires_login()\ndef index():\n\tuser_ativo = db(db.ativo.nome == auth.user.first_name).select().as_list()\n\tif user_ativo == []:\n\t\tdb.ativo.insert(id_user=auth.user.id,nome=auth.user.first_name,status=\'Disponivel\')\n\n\tjs = "$.get(\'{{=URL(a=\'teste_chat\', c=\'home\', f=\'usuarios_online\')}}\',function(data){$(\'#usuario_online\').html(data);});"\n\tsession.usuario_logado = []\n\tsession.usuario_logado = [auth.user.first_name]\n\tsession.usuario_logado += [auth.user.id]\n\twebsocket_send(\'http://127.0.0.1:8888\',js,\'chat\',\'conversa\')\n\n\treturn response.render(\'home/index.html\')\n\ndef login():\n\tif auth.user is None:\n\t\tform = auth.login()\n\t\tform.element(_name=\'email\')[\'_class\'] = "form-control"\n\t\tform.element(_name=\'password\')[\'_class\'] = "form-control"\n\t\tform.element(_name=\'email\')[\'_placeholder\'] = \'E-mail\'\n\t\tform.element(_name=\'password\')[\'_placeholder\'] = \'Senha\'\n\t\tform.element(_type=\'submit\')[\'_class\'] = "btn btn-outline btn-primary btn-lg btn-block"\n\t\treturn response.render(\'home/login.html\', form=form)\n\telse:\n\t\treturn redirect(URL(\'index\'))\n\ndef registro():\n\treturn auth.register()\n\n@auth.requires_login()\ndef usuarios_online():\n\tativos = db(db.ativo.nome != auth.user.first_name).select()\n\testado = db(db.ativo.id_user == auth.user.id).select(status)\n\treturn response.render(\'sub_view/usuarios_online.html\',ativos=ativos,status=estado)\n\n@auth.requires_login()\ndef get_chat():\n\tchat = db(db.chat.id_user == auth.user.id).select()\n\treturn response.render(\'sub_view/chat.html\',chat=chat)\n\n@auth.requires_login()\ndef logout():\n\tdb(db.ativo.id_user == auth.user.id).delete()\n\tjs = "$.get(\'{{=URL(a=\'teste_chat\', c=\'home\', f=\'usuarios_online\')}}\',function(data){$(\'#usuario_online\').html(data);});"\n\twebsocket_send(\'http://127.0.0.1:8888\',js,\'chat\',\'conversa\')\n\tauth.logout()\n\n@auth.requires_login()\ndef retira_usuario():\n\tquery = (db.ativo.nome == auth.user.first_name)\n\tdb(query).delete()\n\treturn redirect(URL(\'index\'))\n\n@auth.requires_login()\ndef trocar_status(status):\n\tdb(db.id_user == auth.user.id).update(status = status)\n\t\nresponse._vars=response._caller(usuarios_online)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/var/www/web2py/applications/teste_chat/controllers/home.py", line 61, in <module>\n  File "/var/www/web2py/gluon/globals.py", line 393, in <lambda>\n    self._caller = lambda f: f()\n  File "/var/www/web2py/gluon/tools.py", line 3440, in f\n    return action(*a, **b)\n  File "/var/www/web2py/applications/teste_chat/controllers/home.py", line 36, in usuarios_online\n    estado = db(db.ativo.id_user == auth.user.id).select(status)\nNameError: global name \'status\' is not defined\n'
+p11
+s.

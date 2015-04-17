@@ -1,0 +1,68 @@
+ {{from gluon.tools import prettydate}} 
+<div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i>
+                           			{{for item in usuario_envio:}}
+				{{=item.first_name}}
+				<input type="hidden" id="id_envio" value="{{=item.id}}">
+			{{pass}}
+                            
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" >
+                            <ul class="chat">
+                            	{{for item in mensagens:}}
+                            	{{if item.id_recebido != auth.user.id:}}
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">{{=item.nome}}</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i>{{=prettydate(item.data_envio)}}
+                                            </small>
+                                        </div>
+                                        <p>
+                                            {{=item.mensagem}}
+                                        </p>
+                                    </div>
+                                </li>
+                                {{else:}}
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i>{{=prettydate(item.data_envio)}}</small>
+                                            <strong class="pull-right primary-font">{{=item.nome}}</strong>
+                                        </div>
+                                        <p>
+                                            {{=item.mensagem}}
+                                        </p>
+                                    </div>
+                                </li>
+                                {{pass}}
+                                {{pass}}
+                        <!-- /.panel-footer -->
+
+                    </div>
+                                            <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Digite sua Mensagem aqui...">
+                                <span class="input-group-btn">
+                                    <button id="btn-envia" class="btn btn-success btn-sm" id="btn-chat">
+                                        Enviar
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+<script>
+$(".panel-body").scrollTop($(document).height()+ 1000);
+	$('#btn-envia').click(function(){
+		$.get("{{=URL(a='teste_chat', c='home', f='envia_mensagem')}}?mensagem="+$('#btn-input').val() + "&id_envio="+$('#id_envio').val());
+	});
+</script>

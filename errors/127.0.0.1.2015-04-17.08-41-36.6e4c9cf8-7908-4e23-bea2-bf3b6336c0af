@@ -1,0 +1,805 @@
+(dp1
+S'output'
+p2
+S'<class \'gluon.contrib.pg8000.ProgrammingError\'> (\'ERROR\', \'42703\', \'column "data" of relation "mensagem" does not exist\')'
+p3
+sS'layer'
+p4
+S'/var/www/web2py/applications/teste_chat/models/models.py'
+p5
+sS'code'
+p6
+S'chat = db.define_table("chat",\n                               Field(\'id\',\'integer\'),\n                               Field(\'nome\',\'string\'),\n                               Field(\'mensagem\',\'string\'),\n                               Field(\'id_user\',\'integer\'),\n                               Field(\'id_recebido\',\'integer\'),\n                               Field(\'data_envio\',\'date\'),\n                               format="%(chat)s",\n                               migrate=True\n                               ),\namigos = db.define_table("amigos",\n                               Field(\'id\',\'integer\'),\n                               Field(\'nome\',\'string\'),\n                               Field(\'status\',\'string\'),\n                               Field(\'id_user\',\'integer\'),\n                               Field(\'id_amigo\',\'integer\'),\n                               format="%(ativo)s",\n                               migrate=True\n                               ),\nmensagem = db.define_table("mensagem",\n                               Field(\'id\',\'integer\'),\n                               Field(\'nome\',\'string\'),\n                               Field(\'mensagem\',\'string\'),\n                               Field(\'descricao\',\'string\'),\n                               Field(\'id_user\',\'integer\'),\n                               Field(\'tipo_mensagem\',\'integer\'),\n                               Field(\'data_envio\',\'date\'),\n                               format="%(mensagem)s",\n                               migrate=True\n                               ),\n\nauth.define_tables(username=False,signature=True,migrate=True)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'gluon.contrib.pg8000'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of ProgrammingError object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of ProgrammingError object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of ProgrammingError object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of ProgrammingError object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of ProgrammingError object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of ProgrammingError object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of ProgrammingError object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'__format__'
+p34
+S'<built-in method __format__ of ProgrammingError object>'
+p35
+sS'__class__'
+p36
+S"<class 'gluon.contrib.pg8000.ProgrammingError'>"
+p37
+sS'__doc__'
+p38
+S"'Generic exception raised for programming errors....http://www.python.org/dev/peps/pep-0249/>`_.\\n    '"
+p39
+sS'__getitem__'
+p40
+S"<method-wrapper '__getitem__' of ProgrammingError object>"
+p41
+sS'__setstate__'
+p42
+S'<built-in method __setstate__ of ProgrammingError object>'
+p43
+sS'__getattribute__'
+p44
+S"<method-wrapper '__getattribute__' of ProgrammingError object>"
+p45
+sS'args'
+p46
+S'(\'ERROR\', \'42703\', \'column "data" of relation "mensagem" does not exist\')'
+p47
+sS'__subclasshook__'
+p48
+S'<built-in method __subclasshook__ of type object>'
+p49
+sS'__unicode__'
+p50
+S'<built-in method __unicode__ of ProgrammingError object>'
+p51
+sS'__delattr__'
+p52
+S"<method-wrapper '__delattr__' of ProgrammingError object>"
+p53
+sS'__repr__'
+p54
+S"<method-wrapper '__repr__' of ProgrammingError object>"
+p55
+sS'__hash__'
+p56
+S"<method-wrapper '__hash__' of ProgrammingError object>"
+p57
+ssS'evalue'
+p58
+S'(\'ERROR\', \'42703\', \'column "data" of relation "mensagem" does not exist\')'
+p59
+sS'request'
+p60
+cgluon.html
+XML_unpickle
+p61
+(S'saa\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>teste_chat</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>home</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">PPA_ID</td><td style="vertical-align:top;">:</td><td><div>c50nvi5vbso7p07ggk22e8ci04<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-971ddff1-ef00-4e5f-86a8-4912d635756a<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_teste_chat</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">webfx-tree-cookie-persistence</td><td style="vertical-align:top;">:</td><td><div>wfxt-4+wfxt-6<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CACHE_CONTROL</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_teste_chat=127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4; PPA_ID=c50nvi5vbso7p07ggk22e8ci04; webfx-tree-cookie-persistence=wfxt-4+wfxt-6; session_id_admin=127.0.0.1-971ddff1-ef00-4e5f-86a8-4912d635756a</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>localhost:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://localhost:8000/teste_chat/home/login/login?_next=/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>35164</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>matheus-pc</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/var/www/web2py/applications/teste_chat/&#x27;, &#x27;/var/www/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x7f4eff64ebd8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.100.100&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;matheus-pc&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/var/www/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;123&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cache_control</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_teste_chat=127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4; PPA_ID=c50nvi5vbso7p07ggk22e8ci04; webfx-tree-cookie-persistence=wfxt-4+wfxt-6; session_id_admin=127.0.0.1-971ddff1-ef00-4e5f-86a8-4912d635756a</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>localhost:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://localhost:8000/teste_chat/home/login/login?_next=/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>matheus-pc.forip.com.br</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>matheus-pc</div></td></tr><tr><td><div>192.168.100.100</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>35164</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>matheus-pc</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.10.3-stable+timestamp.2015.04.02.21.42.07</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7f4f063c11e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x7f4eff670188&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7f4ec61e4850&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7f4f063c11e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x7f4eff670188&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7f4ec61e4850&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py/applications/teste_chat/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/var/www/web2py/applications/teste_chat/&#x27;, &#x27;/var/www/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x7f4eff64ebd8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.100.100&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;matheus-pc&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/var/www/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;123&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>matheus-pc.forip.com.br</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>matheus-pc</div></td></tr><tr><td><div>192.168.100.100</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.10.3-stable+timestamp.2015.04.02.21.42.07</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 4, 17, 8, 41, 36, 908641)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/teste_chat/home/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 4, 17, 11, 41, 36, 908665)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>teste_chat/127.0.0.1.2015-04-17.08-41-36.6e4c9cf8-7908-4e23-bea2-bf3b6336c0af</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x7f4ec6071850&gt;</div></td></tr></table></div>'
+tRp62
+sS'frames'
+p63
+(lp64
+(dp65
+S'file'
+p66
+S'/var/www/web2py/gluon/restricted.py'
+p67
+sS'dump'
+p68
+(dp69
+S'environment'
+p70
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}"
+p71
+sS'ccode'
+p72
+S'<code object <module> at 0x7f4ec61e4530, file "/...pplications/teste_chat/models/models.py", line 1>'
+p73
+ssS'lnum'
+p74
+I227
+sS'lines'
+p75
+(dp76
+I224
+S'            ccode = code'
+p77
+sI225
+S'        else:'
+p78
+sI226
+S'            ccode = compile2(code, layer)'
+p79
+sI227
+S'        exec ccode in environment'
+p80
+sI228
+S'    except HTTP:'
+p81
+sI229
+S'        raise'
+p82
+sI230
+S'    except RestrictedError:'
+p83
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p84
+sI222
+S'    try:'
+p85
+sI223
+S'        if isinstance(code, types.CodeType):'
+p86
+ssS'call'
+p87
+S'(code=\'chat = db.define_table("chat",\\n                 ...ables(username=False,signature=True,migrate=True)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, ...}, layer=\'/var/www/web2py/applications/teste_chat/models/models.py\')'
+p88
+sS'func'
+p89
+S'restricted'
+p90
+sa(dp91
+g66
+S'/var/www/web2py/applications/teste_chat/models/models.py'
+p92
+sg68
+(dp93
+S'migrate'
+p94
+S'undefined'
+p95
+sS'builtinTrue'
+p96
+S'True'
+p97
+ssg74
+I29
+sg75
+(dp98
+I32
+S'auth.define_tables(username=False,signature=True,migrate=True)'
+p99
+sI23
+S"                               Field('mensagem','string'),"
+p100
+sI24
+S"                               Field('descricao','string'),"
+p101
+sI25
+S"                               Field('id_user','integer'),"
+p102
+sI26
+S"                               Field('tipo_mensagem','integer'),"
+p103
+sI27
+S"                               Field('data_envio','date'),"
+p104
+sI28
+S'                               format="%(mensagem)s",'
+p105
+sI29
+S'                               migrate=True'
+p106
+sI30
+S'                               ),'
+p107
+sI31
+S''
+ssg87
+S'()'
+p108
+sg89
+S'<module>'
+p109
+sa(dp110
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/base.py'
+p111
+sg68
+(dp112
+S'fields'
+p113
+S'(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>)'
+p114
+sS'self'
+p115
+S'<DAL uri="postgres:pg8000:******@localhost/sys_chat">'
+p116
+sS'args'
+p117
+S"{'format': '%(mensagem)s', 'migrate': True}"
+p118
+sS'tablename'
+p119
+S"'mensagem'"
+p120
+sS'table'
+p121
+g95
+sS'self.lazy_define_table'
+p122
+S'<bound method DAL.lazy_define_table of <DAL uri="postgres:pg8000:******@localhost/sys_chat">>'
+p123
+ssg74
+I814
+sg75
+(dp124
+I809
+S'                    % (tablename,invalid_args))'
+p125
+sI810
+S'        if self._lazy_tables and tablename not in self._LAZY_TABLES:'
+p126
+sI811
+S'            self._LAZY_TABLES[tablename] = (tablename,fields,args)'
+p127
+sI812
+S'            table = None'
+p128
+sI813
+S'        else:'
+p129
+sI814
+S'            table = self.lazy_define_table(tablename,*fields,**args)'
+p130
+sI815
+S'        if not tablename in self.tables:'
+p131
+sI816
+S'            self.tables.append(tablename)'
+p132
+sI817
+S'        return table'
+p133
+sI818
+S''
+ssg87
+S'(self=<DAL uri="postgres:pg8000:******@localhost/sys_chat">, tablename=\'mensagem\', *fields=(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>), **args={\'format\': \'%(mensagem)s\', \'migrate\': True})'
+p134
+sg89
+S'define_table'
+p135
+sa(dp136
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/base.py'
+p137
+sg68
+(dp138
+S'polymodel'
+p139
+S'None'
+p140
+ssg74
+I853
+sg75
+(dp141
+I848
+S'            try:'
+p142
+sI849
+S'                GLOBAL_LOCKER.acquire()'
+p143
+sI850
+S'                self._lastsql = self._adapter.create_table('
+p144
+sI851
+S'                    table,migrate=migrate,'
+p145
+sI852
+S'                    fake_migrate=fake_migrate,'
+p146
+sI853
+S'                    polymodel=polymodel)'
+p147
+sI854
+S'            finally:'
+p148
+sI855
+S'                GLOBAL_LOCKER.release()'
+p149
+sI856
+S'        else:'
+p150
+sI857
+S'            table._dbt = None'
+p151
+ssg87
+S'(self=<DAL uri="postgres:pg8000:******@localhost/sys_chat">, tablename=\'mensagem\', *fields=(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>), **args={\'format\': \'%(mensagem)s\', \'migrate\': True})'
+p152
+sg89
+S'lazy_define_table'
+p153
+sa(dp154
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py'
+p155
+sg68
+(dp156
+S'fake_migrate'
+p157
+S'False'
+p158
+ssg74
+I491
+sg75
+(dp159
+I486
+S'            if sql_fields != sql_fields_old:'
+p160
+sI487
+S'                self.migrate_table('
+p161
+sI488
+S'                    table,'
+p162
+sI489
+S'                    sql_fields, sql_fields_old,'
+p163
+sI490
+S'                    sql_fields_aux, None,'
+p164
+sI491
+S'                    fake_migrate=fake_migrate'
+p165
+sI492
+S'                    )'
+p166
+sI493
+S'        return query'
+p167
+sI494
+S''
+sI495
+S'    def migrate_table('
+p168
+ssg87
+S'(self=<pydal.adapters.postgres.PostgreSQLAdapter object>, table=<Table mensagem (id,nome,mensagem,descricao,id_user,tipo_mensagem,data_envio)>, migrate=True, fake_migrate=False, polymodel=None)'
+p169
+sg89
+S'create_table'
+p170
+sa(dp171
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py'
+p172
+sg68
+(dp173
+S'self'
+p174
+S'<pydal.adapters.postgres.PostgreSQLAdapter object>'
+p175
+sS'self.execute'
+p176
+S'<bound method PostgreSQLAdapter.execute of <pydal.adapters.postgres.PostgreSQLAdapter object>>'
+p177
+sS'sub_query'
+p178
+S"'ALTER TABLE mensagem DROP COLUMN data;'"
+p179
+ssg74
+I604
+sg75
+(dp180
+I608
+S'                        # partial transactions and'
+p181
+sI599
+S'                    if fake_migrate:'
+p182
+sI600
+S'                        if db._adapter.commit_on_alter_table:'
+p183
+sI601
+S'                            self.save_dbt(table,sql_fields_current)'
+p184
+sI602
+S"                        self.log('faked!\\n', table)"
+p185
+sI603
+S'                    else:'
+p186
+sI604
+S'                        self.execute(sub_query)'
+p187
+sI605
+S'                        # Caveat: mysql, oracle and firebird'
+p188
+sI606
+S'                        # do not allow multiple alter table'
+p189
+sI607
+S'                        # in one transaction so we must commit'
+p190
+ssg87
+S"(self=<pydal.adapters.postgres.PostgreSQLAdapter object>, table=<Table mensagem (id,nome,mensagem,descricao,id_user,tipo_mensagem,data_envio)>, sql_fields={'data_envio': {'length': 512, 'notnull': False, 'sortable': 7, 'sql': 'DATE', 'type': 'date', 'unique': False}, 'descricao': {'length': 512, 'notnull': False, 'sortable': 4, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'id': {'length': 512, 'notnull': False, 'sortable': 1, 'sql': 'SERIAL PRIMARY KEY', 'type': 'id', 'unique': False}, 'id_user': {'length': 512, 'notnull': False, 'sortable': 5, 'sql': 'INTEGER', 'type': 'integer', 'unique': False}, 'mensagem': {'length': 512, 'notnull': False, 'sortable': 3, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'nome': {'length': 512, 'notnull': False, 'sortable': 2, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'tipo_mensagem': {'length': 512, 'notnull': False, 'sortable': 6, 'sql': 'INTEGER', 'type': 'integer', 'unique': False}}, sql_fields_old={'data': {'length': 512, 'notnull': False, 'sortable': 6, 'sql': 'DATE', 'type': 'date', 'unique': False}, 'data_envio': {'length': 512, 'notnull': False, 'sortable': 7, 'sql': 'DATE', 'type': 'date', 'unique': False}, 'descricao': {'length': 512, 'notnull': False, 'sortable': 4, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'id': {'length': 512, 'notnull': False, 'sortable': 1, 'sql': 'SERIAL PRIMARY KEY', 'type': 'id', 'unique': False}, 'id_user': {'length': 512, 'notnull': False, 'sortable': 4, 'sql': 'INTEGER', 'type': 'integer', 'unique': False}, 'mensagem': {'length': 512, 'notnull': False, 'sortable': 3, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'nome': {'length': 512, 'notnull': False, 'sortable': 2, 'sql': 'VARCHAR(512)', 'type': 'string', 'unique': False}, 'tipo_mensagem': {'length': 512, 'notnull': False, 'sortable': 5, 'sql': 'INTEGER', 'type': 'integer', 'unique': False}}, sql_fields_aux={'data_envio': {'sql': 'DATE'}, 'descricao': {'sql': 'VARCHAR(512)'}, 'id': {'sql': 'SERIAL PRIMARY KEY'}, 'id_user': {'sql': 'INTEGER'}, 'mensagem': {'sql': 'VARCHAR(512)'}, 'nome': {'sql': 'VARCHAR(512)'}, 'tipo_mensagem': {'sql': 'INTEGER'}}, logfile=None, fake_migrate=False)"
+p191
+sg89
+S'migrate_table'
+p192
+sa(dp193
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py'
+p194
+sg68
+(dp195
+S'a'
+S"('ALTER TABLE mensagem DROP COLUMN data;',)"
+p196
+sS'self'
+p197
+S'<pydal.adapters.postgres.PostgreSQLAdapter object>'
+p198
+sS'b'
+g21
+sS'self.log_execute'
+p199
+S'<bound method PostgreSQLAdapter.log_execute of <pydal.adapters.postgres.PostgreSQLAdapter object>>'
+p200
+ssg74
+I1326
+sg75
+(dp201
+I1321
+S'        self.db._timings.append((command,time.time()-t0))'
+p202
+sI1322
+S'        del self.db._timings[:-TIMINGSSIZE]'
+p203
+sI1323
+S'        return ret'
+p204
+sI1324
+S''
+sI1325
+S'    def execute(self, *a, **b):'
+p205
+sI1326
+S'        return self.log_execute(*a, **b)'
+p206
+sI1327
+S''
+sI1328
+S'    def represent(self, obj, fieldtype):'
+p207
+sI1329
+S'        field_is_type = fieldtype.startswith'
+p208
+sI1330
+S'        if isinstance(obj, CALLABLETYPES):'
+p209
+ssg87
+S"(self=<pydal.adapters.postgres.PostgreSQLAdapter object>, *a=('ALTER TABLE mensagem DROP COLUMN data;',), **b={})"
+p210
+sg89
+S'execute'
+p211
+sa(dp212
+g66
+S'/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py'
+p213
+sg68
+(dp214
+S'a'
+S"('ALTER TABLE mensagem DROP COLUMN data;',)"
+p215
+sS'b'
+g21
+sS'self'
+p216
+S'<pydal.adapters.postgres.PostgreSQLAdapter object>'
+p217
+sS'ret'
+p218
+g95
+sS'self.cursor'
+p219
+S'<gluon.contrib.pg8000.core.Cursor instance>'
+p220
+sS'command'
+p221
+S"'ALTER TABLE mensagem DROP COLUMN data;'"
+p222
+sS'self.cursor.execute'
+p223
+S'<bound method Cursor.execute of <gluon.contrib.pg8000.core.Cursor instance>>'
+p224
+ssg74
+I1320
+sg75
+(dp225
+I1315
+S'            command = self.filter_sql_command(command)'
+p226
+sI1316
+S'        if self.db._debug:'
+p227
+sI1317
+S"            self.db.logger.debug('SQL: %s' % command)"
+p228
+sI1318
+S'        self.db._lastsql = command'
+p229
+sI1319
+S'        t0 = time.time()'
+p230
+sI1320
+S'        ret = self.cursor.execute(command, *a[1:], **b)'
+p231
+sI1321
+S'        self.db._timings.append((command,time.time()-t0))'
+p232
+sI1322
+S'        del self.db._timings[:-TIMINGSSIZE]'
+p233
+sI1323
+S'        return ret'
+p234
+sI1324
+S''
+ssg87
+S"(self=<pydal.adapters.postgres.PostgreSQLAdapter object>, *a=('ALTER TABLE mensagem DROP COLUMN data;',), **b={})"
+p235
+sg89
+S'log_execute'
+p236
+sa(dp237
+g66
+S'/var/www/web2py/gluon/contrib/pg8000/core.py'
+p238
+sg68
+(dp239
+S'self'
+p240
+S'<gluon.contrib.pg8000.core.Cursor instance>'
+p241
+sS'args'
+p242
+S'None'
+p243
+sS'self._c.execute'
+p244
+S'<bound method Connection.execute of <gluon.contrib.pg8000.core.Connection object>>'
+p245
+sS'self._c'
+p246
+S'<gluon.contrib.pg8000.core.Connection object>'
+p247
+sS'operation'
+p248
+S"'ALTER TABLE mensagem DROP COLUMN data;'"
+p249
+ssg74
+I573
+sg75
+(dp250
+I576
+S'                raise InterfaceError("Cursor closed")'
+p251
+sI577
+S'            elif self._c._sock is None:'
+p252
+sI568
+S'            self._c._lock.acquire()'
+p253
+sI569
+S'            self.stream = stream'
+p254
+sI570
+S''
+sI571
+S'            if not self._c.in_transaction and not self._c.autocommit:'
+p255
+sI572
+S'                self._c.execute(self, "begin transaction", None)'
+p256
+sI573
+S'            self._c.execute(self, operation, args)'
+p257
+sI574
+S'        except AttributeError:'
+p258
+sI575
+S'            if self._c is None:'
+p259
+ssg87
+S"(self=<gluon.contrib.pg8000.core.Cursor instance>, operation='ALTER TABLE mensagem DROP COLUMN data;', args=None, stream=None)"
+p260
+sg89
+g211
+sa(dp261
+g66
+S'/var/www/web2py/gluon/contrib/pg8000/core.py'
+p262
+sg68
+(dp263
+S'cursor'
+p264
+S'<gluon.contrib.pg8000.core.Cursor instance>'
+p265
+sS'self.handle_messages'
+p266
+S'<bound method Connection.handle_messages of <gluon.contrib.pg8000.core.Connection object>>'
+p267
+sS'self'
+p268
+S'<gluon.contrib.pg8000.core.Connection object>'
+p269
+ssg74
+I1697
+sg75
+(dp270
+I1696
+S'        self._flush()'
+p271
+sI1697
+S'        self.handle_messages(cursor)'
+p272
+sI1698
+S'        if cursor.portal_suspended:'
+p273
+sI1699
+S'            if self.autocommit:'
+p274
+sI1700
+S'                raise InterfaceError('
+p275
+sI1701
+S'                    "With autocommit on, it\'s not possible to retrieve more "'
+p276
+sI1692
+S''
+sI1693
+S'        self._send_message(BIND, retval)'
+p277
+sI1694
+S'        self.send_EXECUTE(cursor)'
+p278
+sI1695
+S'        self._write(SYNC_MSG)'
+p279
+ssg87
+S"(self=<gluon.contrib.pg8000.core.Connection object>, cursor=<gluon.contrib.pg8000.core.Cursor instance>, operation='ALTER TABLE mensagem DROP COLUMN data;', vals=())"
+p280
+sg89
+g211
+sa(dp281
+g66
+S'/var/www/web2py/gluon/contrib/pg8000/core.py'
+p282
+sg68
+(dp283
+S'self'
+p284
+S'<gluon.contrib.pg8000.core.Connection object>'
+p285
+sS'self.error'
+p286
+S'ProgrammingError(\'ERROR\', \'42703\', \'column "data" of relation "mensagem" does not exist\')'
+p287
+ssg74
+I1774
+sg75
+(dp288
+I1769
+S'        except:'
+p289
+sI1770
+S'            self._close()'
+p290
+sI1771
+S'            raise'
+p291
+sI1772
+S''
+sI1773
+S'        if self.error is not None:'
+p292
+sI1774
+S'            raise self.error'
+p293
+sI1775
+S''
+sI1776
+S"    # Byte1('C') - Identifies the message as a close command."
+p294
+sI1777
+S'    # Int32 - Message length, including self.'
+p295
+sI1778
+S"    # Byte1 - 'S' for prepared statement, 'P' for portal."
+p296
+ssg87
+S'(self=<gluon.contrib.pg8000.core.Connection object>, cursor=<gluon.contrib.pg8000.core.Cursor instance>)'
+p297
+sg89
+S'handle_messages'
+p298
+sasS'pyver'
+p299
+S'Python 2.7.6: /usr/bin/python (prefix: /usr)'
+p300
+sS'session'
+p301
+g61
+(S's\x1c\x10\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>fcc6a1dd-96c1-42a1-8147-b81680e12ce0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 4, 17, 8, 41, 36, 908641)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remember_me</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">created_by</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">created_on</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 4, 10, 14, 44, 14)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>matheus@forip.com.br</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>Matheus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_active</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>Suffi</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">modified_by</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">modified_on</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 4, 10, 14, 44, 14)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>user_1</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">usuario_envio</td><td style="vertical-align:top;">:</td><td><div><table><thead><tr><th>auth_user.id</th><th>auth_user.first_name</th><th>auth_user.last_name</th><th>auth_user.email</th><th>auth_user.password</th><th>auth_user.registration_key</th><th>auth_user.reset_password_key</th><th>auth_user.registration_id</th><th>auth_user.is_active</th><th>auth_user.created_on</th><th>auth_user.created_by</th><th>auth_user.modified_on</th><th>auth_user.modified_by</th></tr></thead><tbody><tr class="w2p_odd odd"><td>2</td><td>root</td><td>root</td><td>root@forip.com.br</td><td>pbkdf2(1000,20,sha512)$b6e2a1ee45614e24$8d05e55741e5a2f7e9bb0b80d9d1e5b92620a8c9</td><td></td><td></td><td></td><td>True</td><td>2015-04-10 15:15:43</td><td>None</td><td>2015-04-10 15:15:43</td><td>None</td></tr></tbody></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">usuario_logado</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>Matheus</div></td></tr><tr><td><div>1L</div></td></tr></table></div></td></tr></table></div>'
+tRp302
+sS'etype'
+p303
+S"<class 'gluon.contrib.pg8000.ProgrammingError'>"
+p304
+sS'date'
+p305
+S'Fri Apr 17 08:41:36 2015'
+p306
+sS'response'
+p307
+g61
+(S's\xef\x17\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x7f4ec61d1998&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_teste_chat</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div>: </div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>table3cols</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^home/\\w+\\.py$</div></td></tr><tr><td><div>^home/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_teste_chat</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/var/www/web2py/applications/teste_chat/sessions/076/025/127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4&#x27;, mode &#x27;rb+&#x27; at 0x7f4ec61d6300&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/var/www/web2py/applications/teste_chat/sessions/127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>6badc567be40e34ee640a92553d5c24f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-5e170fe6-99e7-414a-b2e7-46f238ad9ce4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_teste_chat</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>teste_chat</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>home/index.html</div></td></tr></table></div>'
+tRp308
+sS'locals'
+p309
+(dp310
+S'cursor'
+p311
+S'<gluon.contrib.pg8000.core.Cursor instance>'
+p312
+sS'self'
+p313
+S'<gluon.contrib.pg8000.core.Connection object>'
+p314
+sg6
+S"'Z'"
+p315
+sS'data_len'
+p316
+S'5'
+sssS'traceback'
+p317
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/var/www/web2py/applications/teste_chat/models/models.py", line 29, in <module>\n    migrate=True\n  File "/var/www/web2py/gluon/packages/dal/pydal/base.py", line 814, in define_table\n    table = self.lazy_define_table(tablename,*fields,**args)\n  File "/var/www/web2py/gluon/packages/dal/pydal/base.py", line 853, in lazy_define_table\n    polymodel=polymodel)\n  File "/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py", line 491, in create_table\n    fake_migrate=fake_migrate\n  File "/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py", line 604, in migrate_table\n    self.execute(sub_query)\n  File "/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py", line 1326, in execute\n    return self.log_execute(*a, **b)\n  File "/var/www/web2py/gluon/packages/dal/pydal/adapters/base.py", line 1320, in log_execute\n    ret = self.cursor.execute(command, *a[1:], **b)\n  File "/var/www/web2py/gluon/contrib/pg8000/core.py", line 573, in execute\n    self._c.execute(self, operation, args)\n  File "/var/www/web2py/gluon/contrib/pg8000/core.py", line 1697, in execute\n    self.handle_messages(cursor)\n  File "/var/www/web2py/gluon/contrib/pg8000/core.py", line 1774, in handle_messages\n    raise self.error\nProgrammingError: (\'ERROR\', \'42703\', \'column "data" of relation "mensagem" does not exist\')\n'
+p318
+s.
